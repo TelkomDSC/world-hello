@@ -39,17 +39,25 @@
 		</style>
 	</head>
 	<body>
-		
+		<form action="" method=post>
+			<input class="button"  type="submit" value="log out" name="logout">
+		</form>	
 	</body>
 </html>
 
 <?php		
 	$uname=$_SESSION['favcolor'];
-
-	$servername = "172.30.59.35:3306";
+	
+	if(isset($_POST['logout']))
+	{	
+		session_destroy();
+		echo "<meta http-equiv='refresh' content='0; url=pw2.php'>";		
+	}
+	
+	$servername = "localhost";
 	$username = "root";
-	$password = "PRpEcJBlcDwt6Amy";
-	$dbname = "paybyqr";
+	$password = "";
+	$dbname = "db_nanu";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);

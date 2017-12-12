@@ -54,10 +54,10 @@
 		echo "<meta http-equiv='refresh' content='0; url=pw2.php'>";		
 	}
 	
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "db_nanu";
+	$servername = "172.30.59.35:3306";
+		$username = "root";
+		$password = "PRpEcJBlcDwt6Amy";
+		$dbname = "paybyqr";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);

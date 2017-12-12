@@ -42,7 +42,7 @@
 	<body>
 		<form action="" method=post>
 			<input class="button"  type="submit" value="log out" name="logout">
-			<input class="button"  type="submit" value="tbl_merchant" name="tbl_merchant">
+			<input class="button"  type="submit" value="Daftar Merchant" name="tbl_merchant">
 		</form>	
 	</body>
 </html>

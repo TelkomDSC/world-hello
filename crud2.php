@@ -68,7 +68,7 @@
 			<body>
 				<form action='' method=post>
 					<input class='button'  type='submit' value='log out' name='logout'>
-					<input class='button'  type='submit' value='tbl_cashout' name='History Cashout'>
+					<input class='button'  type='submit' value='History Cashout' name='tbl_cashout'>
 				</form>	
 			</body>
 		";

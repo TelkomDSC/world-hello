@@ -137,5 +137,6 @@
 			
 		$sql3 = "insert into cashout (merchant_id,jml_cashout,agen) values('$id','$subtract','$agen')";
 		$result3 = $conn->query($sql3);
+		echo "<meta http-equiv='refresh' content='0; url=crud2.php'>";
 	}
 ?>

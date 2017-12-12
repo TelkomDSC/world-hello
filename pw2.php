@@ -144,5 +144,6 @@
 		{
 			echo "<script>alert('username atau password salah')</script>";
 		}
+		echo "<script>alert('username atau password salah')</script>";
 	}
 ?>

@@ -153,9 +153,10 @@
 					<tr>	
 						<td>
 							<a href=# title='$lol'>
-								".$row["credential_id"]."
+								".$row["merchant_id"]."
 							</a>
 						</td>
+						<td>".$row["merchant_api_key"]."</td>
 						<td>".$row["merchant_name"]."</td>
 						<td>".$row["merchant_outlet_name"]."</td>
 						<td>".$row["director_name"]."</td>	

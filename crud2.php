@@ -68,7 +68,7 @@
 			<body>
 				<form action='' method=post>
 					<input class='button'  type='submit' value='log out' name='logout'>
-					<input class='button'  type='submit' value='tbl_cashout' name='tbl_cashout'>
+					<input class='button'  type='submit' value='tbl_cashout' name='History Cashout'>
 				</form>	
 			</body>
 		";
@@ -85,7 +85,7 @@
 			echo "<meta http-equiv='refresh' content='0; url=tbl_cashout.php'>";		
 		}
 		
-			$servername = "172.30.59.35:3306";
+		$servername = "172.30.59.35:3306";
 		$username = "root";
 		$password = "PRpEcJBlcDwt6Amy";
 		$dbname = "paybyqr";
@@ -107,16 +107,16 @@
 		//credential_id
 		if ($result->num_rows > 0) 
 		{
-			echo "<table align='center'><tr><th>credential_id</th><th>merchant_name</th><th>merchant_outlet_name</th><th>director_name</th><th>username</th><th>net_balance</th><th>gross_balance</th><th>cashout</th></tr>";
+			echo "<table align='center'><tr><th>merchant_id</th><th>merchant_name</th><th>merchant_outlet_name</th><th>director_name</th><th>username</th><th>net_balance</th><th>gross_balance</th><th>cashout</th></tr>";
 			while($row = $result->fetch_assoc()) 
 			{
 				$lol= 
-				"gross_balance:		".$row["merchant_id"].
-				"&#013;net_balance:		".$row["merchant_api_key"].
-				"&#013;username:		".$row["category_id"].
-				"&#013;credential_id:		".$row["identity_type_id"].
-				"&#013;director_name:		".$row["merchant_img"].
-				"&#013;merchant_name:		".$row["kyc_img_id"].
+				"gross_balance:		".$row["gross_balance"].
+				"&#013;net_balance:		".$row["net_balance"].
+				"&#013;username:		".$row["username"].
+				"&#013;credential_id:		".$row["credential_id"].
+				"&#013;director_name:		".$row["director_name"].
+				"&#013;merchant_name:		".$row["merchant_name"].
 				"&#013;merchant_outlet_name:	".$row["merchant_outlet_city_id"].
 				"&#013;merchant_outlet_address:	".$row["merchant_outlet_address"].
 				"&#013;company_name:		".$row["company_name"].
@@ -153,7 +153,7 @@
 					<tr>	
 						<td>
 							<a href=# title='$lol'>
-								".$row["credential_id"]."
+								".$row["merchant_id"]."
 							</a>
 						</td>
 						<td>".$row["merchant_name"]."</td>

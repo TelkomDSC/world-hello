@@ -106,7 +106,10 @@
 			}
 		</script>
 		<form class="center" action='' method=post>
-			Jumlah Cashout<br>
+			<?php
+				echo "Jumlah Cashout untuk user: ".$result5['username'];
+			?>
+			<br>
 			<input name='subtract' type='number'><br>
 			<input class="button" onclick="return ask()" type="submit" value="OK" name="SubmitButton">
 			<input class="button" type="submit" value="Cancel" name="CancelButton">

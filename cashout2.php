@@ -14,7 +14,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 	
 
-	$sql5 = mysqli_query($conn,"select username from credential");
+	$sql5 = mysqli_query($conn,"select credential.username from credential,merchant where merchant_id='$id' and credential.credential_id=merchant.credential_id");
 	$result5 = mysqli_fetch_array($sql5);
 ?>
 <html>

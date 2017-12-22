@@ -86,10 +86,9 @@
 		}
 		
 		$servername = "172.30.59.35:3306";
-		$username = "root";
-		$password = "PRpEcJBlcDwt6Amy";
-		$dbname = "paybyqr";
-
+	$username = "root";
+	$password = "PRpEcJBlcDwt6Amy";
+	$dbname = "paybyqr";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection

@@ -2,6 +2,20 @@
 	session_start();
 	$agen=$_SESSION['favcolor'];
 	echo "welcome ".$agen;
+
+	$servername = "172.30.59.35:3306";
+	$username = "root";
+	$password = "PRpEcJBlcDwt6Amy";
+	$dbname = "paybyqr";
+		
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	if ($conn->connect_error) 
+	{
+		die("Connection failed: " . $conn->connect_error);
+	} 	
+
+	$sql5 = mysqli_query($conn,"select username from credential");
+	$result5 = mysqli_fetch_array($sql5);
 ?>
 <html>
 <head>
@@ -106,19 +120,10 @@
 	}
 	if(isset($_POST['SubmitButton']))
 	{
-		$servername = "172.30.59.35:3306";
-		$username = "root";
-		$password = "PRpEcJBlcDwt6Amy";
-		$dbname = "paybyqr";
+		
 		
 		$subtract=$_POST['subtract'];
 		echo $subtract;
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		if ($conn->connect_error) 
-		{
-			die("Connection failed: " . $conn->connect_error);
-		} 			
-		
 		$id=$_GET["cashout"];
 			
 		$sql=mysqli_query($conn,"select net_balance,gross_balance from merchant where merchant_id='$id'");

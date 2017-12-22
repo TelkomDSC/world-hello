@@ -114,7 +114,7 @@
 		</script>
 		<form class="center" action='' method=post>
 			<?php
-				echo $result5['username']."<br>".$result5['merchant_name']."<br>".$result5['merchant_outlet_name'];
+				echo "Username: ".$result5['username']."<br>Merchant Name: ".$result5['merchant_name']."<br>Merchant Outlet Name: ".$result5['merchant_outlet_name'];
 				echo "<br><br>Jumlah Cashout";
 			?>
 			<br>

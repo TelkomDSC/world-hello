@@ -107,7 +107,7 @@
 		//credential_id
 		if ($result->num_rows > 0) 
 		{
-			echo "<table align='center'><tr><th>merchant_id</th><th>username</th><th>merchant_api_key</th><th>merchant_name</th><th>merchant_outlet_name</th><th>director_name</th><th>username</th><th>net_balance</th><th>gross_balance</th><th>cashout</th></tr>";
+			echo "<table align='center'><tr><th>merchant_id</th><th>username</th><th>merchant_api_key</th><th>merchant_name</th><th>merchant_outlet_name</th><th>director_name</th><th>net_balance</th><th>gross_balance</th><th>cashout</th></tr>";
 			while($row = $result->fetch_assoc()) 
 			{
 				$lol= 
@@ -159,8 +159,7 @@
 						<td>".$row["merchant_api_key"]."</td>
 						<td>".$row["merchant_name"]."</td>
 						<td>".$row["merchant_outlet_name"]."</td>
-						<td>".$row["director_name"]."</td>	
-						<td>".$row["username"]."</td>	
+						<td>".$row["director_name"]."</td>		
 						<td>".$row["net_balance"]."</td>	
 						<td>".$row["gross_balance"]."</td>
 						<td>

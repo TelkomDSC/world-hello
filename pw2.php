@@ -92,9 +92,9 @@
 	if(isset($_POST['SubmitButton']))
 	{ 
 		$servername = "172.30.59.35:3306";
-		$username = "root";
-		$password = "PRpEcJBlcDwt6Amy";
-		$dbname = "paybyqr";
+	$username = "root";
+	$password = "PRpEcJBlcDwt6Amy";
+	$dbname = "paybyqr";
 			
 		/*<form class="center" action='' method=post>
 		Jumlah Cashout<br>
@@ -144,6 +144,5 @@
 		{
 			echo "<script>alert('username atau password salah')</script>";
 		}
-		
 	}
 ?>
